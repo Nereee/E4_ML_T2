@@ -61,14 +61,13 @@
         <langilea id="l01">
             <izena>Steven</izena>
             <abizena>King</abizena>
-            <email>SKING</email>
+            <email>sking@email.com</email>
             <telefonoa>515.123.4567</telefonoa>
             <bizilekua>Bilbo</bizilekua>
             <postua>
                 <departamentu kodea="d01"/>
                 <ardurak>
                     <ardura kodea="a01"/>
-                    <ardura kodea="a03"/>
                 </ardurak>
             </postua>
         </langilea>
@@ -76,14 +75,13 @@
         <langilea id="l02">
             <izena>Neena</izena>
             <abizena>Kochhar</abizena>
-            <email>NKOCHHAR</email>
+            <email>nkochhar@gmail.com</email>
             <telefonoa>515.123.4568</telefonoa>
             <bizilekua>Basauri</bizilekua>
             <postua>
                 <departamentu kodea="d02"/>
                 <ardurak>
                     <ardura kodea="a01"/>
-                    <ardura kodea="a04"/>
                 </ardurak>
             </postua>
         </langilea>
@@ -91,14 +89,13 @@
         <langilea id="l03">
             <izena>Lex</izena>
             <abizena>De Haan</abizena>
-            <email>LDEHAAN</email>
+            <email>ldehaan@gmail.com</email>
             <telefonoa>515.123.4569</telefonoa>
             <bizilekua>Barakaldo</bizilekua>
             <postua>
                 <departamentu kodea="d03"/>
                 <ardurak>
                     <ardura kodea="a03"/>
-                    <ardura kodea="a01"/>
                 </ardurak>
             </postua>
         </langilea>
@@ -106,14 +103,13 @@
         <langilea id="l04">
             <izena>Alexander</izena>
             <abizena>Hunold</abizena>
-            <email>AHUNOLD</email>
+            <email>ahunold@gmail.com</email>
             <telefonoa>590.423.4567</telefonoa>
             <bizilekua>Basarrate</bizilekua>
             <postua>
                 <departamentu kodea="d04"/>
                 <ardurak>
                     <ardura kodea="a02"/>
-                    <ardura kodea="a04"/>
                 </ardurak>
             </postua>
         </langilea>
