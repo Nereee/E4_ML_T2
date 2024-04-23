@@ -18,13 +18,13 @@
             </manager>
         </departamentu>
         <departamentu id="I03">
-            <izena>Salmentak</izena>
+            <izena>Saltzeak</izena>
             <manager id="m03">
                 <zentroa>Haia</zentroa>
             </manager>
         </departamentu>
         <departamentu id="I04">
-            <izena>RRHH</izena>
+            <izena>Langileen Erresurtsu Gestionatzea</izena>
             <manager id="m04">
                 <zentroa>Haia</zentroa>
             </manager>
@@ -34,24 +34,24 @@
     <!-- Ardurak -->
     <ardurak>
         <ardura id="a01">
-            <izena>Kontu-hartzaile publikoa</izena>
-            <min_salary>4200</min_salary>
-            <max_salary>9000</max_salary>
+            <izena>Publiko Kontulari</izena>
+            <min_soldata>4200</min_soldata>
+            <max_soldata>9000</max_soldata>
         </ardura>
         <ardura id="a02">
-            <izena>Kontu-hartzaile managerra</izena>
-            <min_salary>8200</min_salary>
-            <max_salary>16000</max_salary>
+            <izena>Kontu Kudeatzailea</izena>
+            <min_soldata>8200</min_soldata>
+            <max_soldata>16000</max_soldata>
         </ardura>
         <ardura id="a03">
-            <izena>Administratzaile laguntzailea</izena>
-            <min_salary>3000</min_salary>
-            <max_salary>6000</max_salary>
+            <izena>Administrazio Laguntzailea</izena>
+            <min_soldata>3000</min_soldata>
+            <max_soldata>6000</max_soldata>
         </ardura>
         <ardura id="a04">
             <izena></izena>
-            <min_salary>20000</min_salary>
-            <max_salary>400000</max_salary>
+            <min_soldata>20000</min_soldata>
+            <max_soldata>400000</max_soldata>
         </ardura>
     </ardurak>
     
