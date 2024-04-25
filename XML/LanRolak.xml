@@ -113,5 +113,172 @@
                 </ardurak>
             </postua>
         </langilea>
+        <langilea id="l05">
+            <izena>John</izena>
+            <abizena>Doe</abizena>
+            <email>johndoe@gmail.com</email>
+            <telefonoa>123.456.7890</telefonoa>
+            <bizilekua>New York</bizilekua>
+            <postua>
+                <departamentu kodea="d01"/>
+                <ardurak>
+                    <ardura kodea="a01"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l06">
+            <izena>Maria</izena>
+            <abizena>Garcia</abizena>
+            <email>mgarcia@gmail.com</email>
+            <telefonoa>987.654.3210</telefonoa>
+            <bizilekua>Madrid</bizilekua>
+            <postua>
+                <departamentu kodea="d02"/>
+                <ardurak>
+                    <ardura kodea="a01"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l07">
+            <izena>Thomas</izena>
+            <abizena>Smith</abizena>
+            <email>t.smith@gmail.com</email>
+            <telefonoa>456.789.0123</telefonoa>
+            <bizilekua>London</bizilekua>
+            <postua>
+                <departamentu kodea="d03"/>
+                <ardurak>
+                    <ardura kodea="a02"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l08">
+            <izena>Alexander</izena>
+            <abizena>Hunold</abizena>
+            <email>ahunold@gmail.com</email>
+            <telefonoa>590.423.4567</telefonoa>
+            <bizilekua>Basarrate</bizilekua>
+            <postua>
+                <departamentu kodea="d04"/>
+                <ardurak>
+                    <ardura kodea="a02"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l09">
+            <izena>Laura</izena>
+            <abizena>Miller</abizena>
+            <email>lmiller@gmail.com</email>
+            <telefonoa>234.567.8901</telefonoa>
+            <bizilekua>Paris</bizilekua>
+            <postua>
+                <departamentu kodea="d01"/>
+                <ardurak>
+                    <ardura kodea="a03"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l10">
+            <izena>David</izena>
+            <abizena>Lee</abizena>
+            <email>dlee@gmail.com</email>
+            <telefonoa>789.012.3456</telefonoa>
+            <bizilekua>Tokyo</bizilekua>
+            <postua>
+                <departamentu kodea="d02"/>
+                <ardurak>
+                    <ardura kodea="a02"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l11">
+            <izena>Julia</izena>
+            <abizena>Johnson</abizena>
+            <email>jjohnson@gmail.com</email>
+            <telefonoa>901.234.5678</telefonoa>
+            <bizilekua>Berlin</bizilekua>
+            <postua>
+                <departamentu kodea="d03"/>
+                <ardurak>
+                    <ardura kodea="a01"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l12">
+            <izena>Michael</izena>
+            <abizena>Wong</abizena>
+            <email>mwong@gmail.com</email>
+            <telefonoa>345.678.9012</telefonoa>
+            <bizilekua>Hong Kong</bizilekua>
+            <postua>
+                <departamentu kodea="d04"/>
+                <ardurak>
+                    <ardura kodea="a03"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l13">
+            <izena>Emily</izena>
+            <abizena>Kim</abizena>
+            <email>ekim@gmail.com</email>
+            <telefonoa>678.901.2345</telefonoa>
+            <bizilekua>Seoul</bizilekua>
+            <postua>
+                <departamentu kodea="d01"/>
+                <ardurak>
+                    <ardura kodea="a01"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l14">
+            <izena>Daniel</izena>
+            <abizena>Chen</abizena>
+            <email>dchen@gmail.com</email>
+            <telefonoa>012.345.6789</telefonoa>
+            <bizilekua>Beijing</bizilekua>
+            <postua>
+                <departamentu kodea="d02"/>
+                <ardurak>
+                    <ardura kodea="a03"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l15">
+            <izena>Sarah</izena>
+            <abizena>Martin</abizena>
+            <email>smartin@gmail.com</email>
+            <telefonoa>567.890.1234</telefonoa>
+            <bizilekua>Sydney</bizilekua>
+            <postua>
+                <departamentu kodea="d03"/>
+                <ardurak>
+                    <ardura kodea="a02"/>
+                </ardurak>
+            </postua>
+        </langilea>
+        
+        <langilea id="l16">
+            <izena>Raj</izena>
+            <abizena>Patel</abizena>
+            <email>rpatel@gmail.com</email>
+            <telefonoa>456.789.0123</telefonoa>
+            <bizilekua>Mumbai</bizilekua>
+            <postua>
+                <departamentu kodea="d04"/>
+                <ardurak>
+                    <ardura kodea="a01"/>
+                </ardurak>
+            </postua>
+        </langilea>
     </langileak>
 </enpresa>
