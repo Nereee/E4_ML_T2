@@ -351,3 +351,19 @@ footer .saresozial {
 .formularioaH p:hover {
     text-decoration: underline;
 }
+
+/* Estilos para el diseño de departamentos con Flexbox */
+
+.container-departments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Cambia esto según tu preferencia */
+  }
+  
+  .department {
+    width: calc(33.33% - 20px); /* Esto hace que cada departamento ocupe aproximadamente un tercio del ancho */
+    margin-bottom: 20px;
+    background-color: black; /* Estilo de fondo para cada departamento */
+    padding: 10px;
+    box-sizing: border-box;
+  }
