@@ -26,6 +26,7 @@
                             <li><a href="../index.html">Hasiera</a></li>
                             <li><a href="#">Bilatu</a></li>
                             <li><a href="../PHP/hasisaioa.php">Hasi saioa </a></li>
+                            <li><a href="../PHP/departamentuak.php">Departamentuak </a></li>
                         </ul>
                     </div>
                 </nav>
