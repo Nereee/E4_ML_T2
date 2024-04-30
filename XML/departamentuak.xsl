@@ -28,15 +28,14 @@
             <ul>
               <li><a href="../index.html">Hasiera</a></li>
               <li><a href="#">Bilatu</a></li>
-              <li><a href="PHP/hasisaioa.php">Hasi saioa</a></li>
-              <li><a href="departamentuak.php">Departamentuak</a></li>
+              <li><a href="../PHP/hasisaioa.php">Hasi saioa</a></li>
             </ul>
           </div>
         </nav>
 
         <section>
-          <h2>Departamentuak</h2>
-          <div class="container-departments">
+          <h2>Departamentua</h2>
+          <div class="container-departments">   
             <xsl:for-each select="departamentuak/departamentu">
               <div class="department">
                 <p><strong>Departamentu ID:</strong> <xsl:value-of select="@id"/></p>

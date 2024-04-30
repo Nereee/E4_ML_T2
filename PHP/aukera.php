@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="eu">
-    
+
+
 <head>
     <title>Spoty5</title>
     <meta name="keywords" content="musika, erreproduktorea,spoty5">
@@ -14,12 +15,10 @@
     <script src="https://kit.fontawesome.com/9b73a90cb7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
 
 
-<body onload="konprobatulogin()">
+<body>
     <header>
         <div class="container">
             <div class="logo">
@@ -29,32 +28,29 @@
     </header>
 
 
-    <hr>
-
-
     <nav>
         <div class="nabegaziobarra">
             <ul>
-                <li><a href="../index.html">Hasiera</a></li>
+                <li><a href="index.html">Hasiera</a></li>
                 <li><a href="#">Bilatu</a></li>
-                <li><a href="hasisaioa.php">Hasi saioa </a></li>
+                <li><a href="PHP/hasisaioa.php">Hasi saioa </a></li>
 
             </ul>
         </div>
     </nav>
 
 
-    <hr>
-<body>
+
     
     <section class="formularioaH">
-    <h5>Saio hasiera</h5>
-    <form id="botoia" action="hasisaioa.php" method="post">
-            <input class="control" type="text" name="fname" value="" placeholder="Idatzi zure izena" required>
-            <input class="control" type="password" name="fpassword" value="" placeholder="Pasahitza" required>
-            <input class="botoia" type="submit" name="botoia" value="Jarraitu" >
-    </form>
+        <h2> Aukeratu:</h2>
+            <form id="botoia" action="#" method="post">
+                <button class="botoia" type="button" onclick="departamentuak()">Departamentuak</button>
+                <button class="botoia" type="button" onclick="langileak()">Langileak</button>
+            </form>
     </section>
+    
+
 
     <footer>
         <div class="container3">
@@ -99,22 +95,16 @@
             </div>
         </div>
     </footer>
-
     <script>
-       function konprobatulogin() {
-    <?php
-    $erabiltzailea = $_POST['fname']; // Hartu erabiltzailea eta pasahitza formulariotik
-    $pasahitza = $_POST['fpassword']; 
-
-    // IKonparatu ia berdinak diren
-    if ($erabiltzailea === 'admin' && $pasahitza === 'haia') {
-        echo 'alert("Konektatuta!");';
-        echo 'window.location.href = "aukera.php";';
-    } else {
-        echo 'alert("Errorea, erabiltzailea edo pasahitza txarto.");';
+    function departamentuak() {
+        window.location.href = "departamentuak.php"; 
     }
-    ?>
-}
-    </script>
+
+    function langileak() {
+        window.location.href = "langileak.php"; 
+    }
+</script>
 </body>
+
+
 </html>
