@@ -9,7 +9,7 @@
     <meta name="description"
         content="Musika eta pdcast erreproduktore aplikazio bat da Spoty5">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9b73a90cb7.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="logoa">
+                <img src="../img/logo.png" alt="logoa">
             </div>
         </div>
     </header>
@@ -40,52 +40,16 @@
     </nav>
 
 
-    <section>
-        <h2>GEHIEN ENTZUTAKO ARTISTAK</h2>
-        <div class="container2">
-            <div class="artistak">
-                <h3>BAD BUNNY</h3>
-                <img src="img/badbunny.jpg" alt="badbunny irudia" height="400" width="250">
-            </div>
 
-
-            <div class="artistak">
-                <h3>BAD GYAL</h3>
-                <img src="img/badgyal.jpg" alt="bad gyal irudia" height="400" width="250">
-            </div>
-
-
-            <div class="artistak">
-                <h3>COLDPLAY</h3>
-                <img src="img/coldplay.jpg" alt="coldplay irudiak" height="400" width="250">
-            </div>
-
-
-            <div class="artistak">
-                <h3>SCORPIONS</h3>
-                <img src="img/scorpions.jpg" alt="scorpions irudia" height="400" width="250">
-            </div>
-
-
-            <div class="info-index">
-                <h2>Gehien entzutako albumak:</h2>
-                <p class="lehenletrabeltz">Nadie sabe lo que va a pasar mañana - Bad Bunny<br>
-                    Donde quiero estar - Quevedo<br>
-                    Un verano sin ti - Bad Bunny<br>
-                    ESTRELLA - Mora<br>
-                    Gata only - FloyyMenor<br>
-                    ÷ - Ed Sheeran.<br>
-                    Dua Lipa - Dua Lipa.<br>
-                    Hollywood's Bleeding - Post Malone.<br>
-                    Beerbongs & Bentleys - Post Malone.<br>
-                    Starboy - The Weeknd
-
-                </p>
-            </div>
-        </div>
-
-
+    
+    <section class="formularioaH">
+        <h2> Aukeratu:</h2>
+            <form id="botoia" action="#" method="post">
+                <button class="botoia" type="button" onclick="departamentuak()">Departamentuak</button>
+                <button class="botoia" type="button" onclick="langileak()">Langileak</button>
+            </form>
     </section>
+    
 
 
     <footer>
@@ -131,6 +95,15 @@
             </div>
         </div>
     </footer>
+    <script>
+    function departamentuak() {
+        window.location.href = "departamentuak.php"; 
+    }
+
+    function langileak() {
+        window.location.href = "langileak.php"; 
+    }
+</script>
 </body>
 
 
