@@ -6,7 +6,7 @@
    $arauak ->load("../XML/departamentuak.xsl");
 
    $datuak = new DOMDocument();
-   $datuak->load("../XML/LanRolak.xml");
+   $datuak->load("../XML/datuak.xml");
 
 /* Arau horiek aplikatzeko "motor" bat sortzen dugu. Transformazio-arauak kargatuko dizkizugu. Arau horiek aplikatuko dizkiogu dokumentuari */
 

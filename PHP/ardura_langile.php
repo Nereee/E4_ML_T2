@@ -3,15 +3,15 @@
 /* Ardura zehatz bat duten langileak erakusteko*/
 
    $arauak = new DOMDocument();
-   $arauak ->load("ardura_langile.xsl");
+   $arauak ->load("../XML/ardura_langile.xsl");
 
    $datuak = new DOMDocument();
-   $datuak->load("datuak.xml");
+   $datuak->load("../XML/datuak.xml");
 
    $proc = new XSLTProcessor();
    $proc->importStylesheet($arauak);
 
-   $proc ->setParameter("",'id_ardura',$_GET['id_ardura']);
+   $proc ->setParameter("",'id',$_GET['id']);
    
    echo $proc->transformToXML($datuak);
 

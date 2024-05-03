@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="langileak.xsl"?>
-<enpresa>
+<enpresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="balidazioa.xsd">
+
     <izena>Spoty5</izena>
     <web>spoty5.com</web>
     
@@ -8,23 +9,23 @@
     <departamentuak>
         <departamentu id="d01">
             <izena>Administrazioa</izena>
-            <manager id="I01">
+            <manager id="m01">
                 <zentroa>Haia</zentroa>
             </manager>
         </departamentu>
-        <departamentu id="I02">
+        <departamentu id="d02">
             <izena>Marketin</izena>
             <manager id="m02">
                 <zentroa>Haia</zentroa>
             </manager>
         </departamentu>
-        <departamentu id="I03">
+        <departamentu id="d03">
             <izena>Saltzeak</izena>
             <manager id="m03">
                 <zentroa>Haia</zentroa>
             </manager>
         </departamentu>
-        <departamentu id="I04">
+        <departamentu id="d04">
             <izena>Langileen Erresurtsu Gestionatzea</izena>
             <manager id="m04">
                 <zentroa>Haia</zentroa>
@@ -45,12 +46,12 @@
             <max_soldata>16000</max_soldata>
         </ardura>
         <ardura id="a03">
-            <izena>Administrazio Laguntzailea</izena>
+            <izena>Administrazio Laguntza</izena>
             <min_soldata>3000</min_soldata>
             <max_soldata>6000</max_soldata>
         </ardura>
         <ardura id="a04">
-            <izena></izena>
+            <izena>Marketing Kudeatzailea</izena>
             <min_soldata>20000</min_soldata>
             <max_soldata>400000</max_soldata>
         </ardura>
@@ -60,7 +61,7 @@
     <langileak>
         <!-- Langilea 1 -->
         <langilea id="l01">
-            <izena>Steven</izena>
+            <izena>Steven  </izena>
             <abizena>King</abizena>
             <email>sking@email.com</email>
             <telefonoa>515.123.4567</telefonoa>
@@ -78,9 +79,9 @@
         </langilea>
         <!-- Langilea 2 -->
         <langilea id="l02">
-            <izena>Neena</izena>
+            <izena>Neena  </izena>
             <abizena>Kochhar</abizena>
-            <email>nkochhar@gmail.com</email>
+            <email>kochhar@gmail.com</email>
             <telefonoa>515.123.4568</telefonoa>
             <bizilekua>Basauri</bizilekua>
             <jaiotzedata>1999-09-15</jaiotzedata>
@@ -96,12 +97,12 @@
         </langilea>
         <!-- Langilea 3 -->
         <langilea id="l03">
-            <izena>Lex</izena>
+            <izena>Lex  </izena>
             <abizena>De Haan</abizena>
             <email>ldehaan@gmail.com</email>
             <telefonoa>515.123.4569</telefonoa>
             <bizilekua>Barakaldo</bizilekua>
-            <jaiotzedata>199709-19</jaiotzedata>
+            <jaiotzedata>1997-09-19</jaiotzedata>
             <kontrataziodata>2019-01-03</kontrataziodata>
             <soldata>1699</soldata>
             <img>../img/langileak/langile3.png</img>
@@ -114,7 +115,7 @@
         </langilea>
         <!-- Langilea 4 -->
         <langilea id="l04">
-            <izena>Alexander</izena>
+            <izena>Alexander  </izena>
             <abizena>Hunold</abizena>
             <email>ahunold@gmail.com</email>
             <telefonoa>590.423.4567</telefonoa>
@@ -131,7 +132,7 @@
             </postua>
         </langilea>
         <langilea id="l05">
-            <izena>John</izena>
+            <izena>John  </izena>
             <abizena>Doe</abizena>
             <email>johndoe@gmail.com</email>
             <telefonoa>123.456.7890</telefonoa>
@@ -143,13 +144,13 @@
             <postua>
                 <departamentu kodea="d01"/>
                 <ardurak>
-                    <ardura kodea="a01"/>
+                    <ardura kodea="a04"/>
                 </ardurak>
             </postua>
         </langilea>
         
         <langilea id="l06">
-            <izena>Maria</izena>
+            <izena>Maria  </izena>
             <abizena>Garcia</abizena>
             <email>mgarcia@gmail.com</email>
             <telefonoa>987.654.3210</telefonoa>
@@ -167,7 +168,7 @@
         </langilea>
         
         <langilea id="l07">
-            <izena>Thomas</izena>
+            <izena>Thomas  </izena>
             <abizena>Smith</abizena>
             <email>t.smith@gmail.com</email>
             <telefonoa>456.789.0123</telefonoa>
@@ -179,13 +180,13 @@
             <postua>
                 <departamentu kodea="d03"/>
                 <ardurak>
-                    <ardura kodea="a02"/>
+                    <ardura kodea="a04"/>
                 </ardurak>
             </postua>
         </langilea>
         
         <langilea id="l08">
-            <izena>Alexander</izena>
+            <izena>Alexander  </izena>
             <abizena>Hunold</abizena>
             <email>ahunold@gmail.com</email>
             <telefonoa>590.423.4567</telefonoa>
@@ -203,7 +204,7 @@
         </langilea>
         
         <langilea id="l09">
-            <izena>Laura</izena>
+            <izena>Laura  </izena>
             <abizena>Miller</abizena>
             <email>lmiller@gmail.com</email>
             <telefonoa>234.567.8901</telefonoa>
@@ -221,7 +222,7 @@
         </langilea>
         
         <langilea id="l10">
-            <izena>David</izena>
+            <izena>David  </izena>
             <abizena>Lee</abizena>
             <email>dlee@gmail.com</email>
             <telefonoa>789.012.3456</telefonoa>
@@ -233,13 +234,13 @@
             <postua>
                 <departamentu kodea="d02"/>
                 <ardurak>
-                    <ardura kodea="a02"/>
+                    <ardura kodea="a04"/>
                 </ardurak>
             </postua>
         </langilea>
         
         <langilea id="l11">
-            <izena>Julia</izena>
+            <izena>Julia  </izena>
             <abizena>Johnson</abizena>
             <email>jjohnson@gmail.com</email>
             <telefonoa>901.234.5678</telefonoa>
@@ -257,7 +258,7 @@
         </langilea>
         
         <langilea id="l12">
-            <izena>Michael</izena>
+            <izena>Michael  </izena>
             <abizena>Wong</abizena>
             <email>mwong@gmail.com</email>
             <telefonoa>345.678.9012</telefonoa>
@@ -275,7 +276,7 @@
         </langilea>
         
         <langilea id="l13">
-            <izena>Emily</izena>
+            <izena>Emily  </izena>
             <abizena>Kim</abizena>
             <email>ekim@gmail.com</email>
             <telefonoa>678.901.2345</telefonoa>
@@ -293,7 +294,7 @@
         </langilea>
         
         <langilea id="l14">
-            <izena>Daniel</izena>
+            <izena>Daniel  </izena>
             <abizena>Chen</abizena>
             <email>dchen@gmail.com</email>
             <telefonoa>012.345.6789</telefonoa>
@@ -311,7 +312,7 @@
         </langilea>
         
         <langilea id="l15">
-            <izena>Sarah</izena>
+            <izena>Sarah  </izena>
             <abizena>Martin</abizena>
             <email>smartin@gmail.com</email>
             <telefonoa>567.890.1234</telefonoa>

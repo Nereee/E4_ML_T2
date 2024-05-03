@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="enpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="izena" type="xs:string"/>
+        <xs:element name="web" type="xs:string"/>
+        <xs:element name="departamentuak" type="departamentuakMota"/>
+        <xs:element name="ardurak" type="ardurakMota"/>
+        <xs:element name="langileak" type="langileakMota"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="departamentuakMota">
+    <xs:sequence>
+      <xs:element name="departamentu" maxOccurs="unbounded" type="departamentuMota"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="departamentuMota">
+    <xs:sequence>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="manager" type="managerMota"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="managerMota">
+    <xs:sequence>
+      <xs:element name="zentroa" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ardurakMota">
+    <xs:sequence>
+      <xs:element name="ardura" maxOccurs="unbounded" type="arduraMota"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="arduraMota">
+    <xs:sequence>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="min_soldata" type="xs:integer"/>
+      <xs:element name="max_soldata" type="xs:integer"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="langileakMota">
+    <xs:sequence>
+      <xs:element name="langilea" maxOccurs="unbounded" type="langileaMota"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="langileaMota">
+    <xs:sequence>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="abizena" type="xs:string"/>
+      <xs:element name="email" type="xs:string"/>
+      <xs:element name="telefonoa" type="xs:string"/>
+      <xs:element name="bizilekua" type="xs:string"/>
+      <xs:element name="jaiotzedata" type="xs:date"/>
+      <xs:element name="kontrataziodata" type="xs:date"/>
+      <xs:element name="soldata" type="xs:integer"/>
+      <xs:element name="img" type="xs:string"/>
+      <xs:element name="postua" type="postuaMota"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+<xs:complexType name="postuaMota">
+  <xs:sequence>
+    <xs:element name="departamentu" type="departamentuErreferentziaMota"/>
+    <xs:element name="ardurak" type="arduraErreferentziaMota"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="departamentuErreferentziaMota">
+  <xs:attribute name="kodea" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="arduraErreferentziaMota">
+  <xs:sequence>
+    <xs:element name="ardura">
+      <xs:complexType>
+          <xs:simpleContent>
+              <xs:extension base="xs:string">
+              <xs:attribute name="kodea" type="xs:string" use="required"/>
+              </xs:extension>
+          </xs:simpleContent>
+      </xs:complexType>    
+    </xs:element>
+  </xs:sequence>   
+</xs:complexType>
+
+
+</xs:schema>
