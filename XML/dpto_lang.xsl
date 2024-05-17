@@ -1,11 +1,15 @@
-﻿<xsl:stylesheet version="1.0"
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:param name="id"></xsl:param>
+
+    <xsl:output method="xml" indent="yes"/>
 
     <xsl:template match="enpresa">
         <html>
             <head>
                 <title>Spoty5</title>
-                <meta name="keywords" content="musika, erreproduktorea,spoty5"/>
+                <meta name="keywords" content="musika, erreproduktorea, spoty5"/>
                 <meta name="author" content="haia"/>
                 <meta name="description" content="Musika eta pdcast erreproduktore aplikazio bat da Spoty5"/>
                 <meta charset="UTF-8"/>
@@ -40,8 +44,20 @@
                         </ul>
                     </div>
                 </nav>
-                <section>
-                    <xsl:apply-templates select="langileak/langilea"/>
+                <section class= "container5">
+                    <div class="langile_filtratu">
+                        <xsl:for-each select="langileak/langilea">
+                            <xsl:if test="postua/departamentu/@kodea = $id">
+                                <xsl:value-of select="izena"/>
+                                <xsl:value-of select="abizena"/>
+                                <br></br>
+                                <p>Telefonoa:<xsl:value-of select="telefonoa"/>
+                                </p>
+                                <img src="{img}" alt="Langilearen irudia"/>
+                                <br/>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </div>
                 </section>
                 <footer>
                     <div class="container3">
@@ -86,28 +102,5 @@
                 </footer>
             </body>
         </html>
-    </xsl:template>
-
-    <xsl:template match="langilea">
-        <div class="container4">
-            <b>
-                <xsl:value-of select="izena"/>
-                <xsl:value-of select="abizena"/>
-            </b>
-            <br/>
-            <p>Email: <xsl:value-of select="email"/>
-            </p>
-            <br/>
-            <p>Teléfono: <xsl:value-of select="telefonoa"/>
-            </p>
-            <br/>
-            <img src="{img}" alt="Langilearen irudia"/>
-            <br/>
-            <p>Departamentua: <xsl:value-of select="postua/departamentu/@kodea"/>
-            </p>
-            <br/>
-            <p>Ardura: <xsl:value-of select="postua/ardurak/ardura/@kodea"/>
-            </p>
-        </div>
     </xsl:template>
 </xsl:stylesheet>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output method="html" version="5" />
 
@@ -24,44 +24,34 @@
         </header>
 
         <nav>
-          <div class="nabegaziobarra">
-            <ul>
-              <li>
-                <a href="../index.html">Hasiera</a>
-              </li>
-              <li>
-                <a href="#">Bilatu</a>
-              </li>
-              <li>
-                <a href="../PHP/hasisaioa.php">Hasi saioa</a>
-              </li>
-              <li>
-                <a href="../PHP/aukera.php">Aukerak</a>
-              </li>
-            </ul>
-          </div>
+            <div class="nabegaziobarra">
+                <ul>
+                    <li>
+                        <a href="../index.html">Hasiera</a>
+                    </li>
+                    <li>
+                        <a href="#">Bilatu</a>
+                    </li>
+                    <li>
+                        <a href="../PHP/hasisaioa.php">Hasi saioa</a>
+                    </li>
+                    <li>
+                        <a href="../PHP/aukera.php">Aukerak</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <section>
-          <h2>Departamentua</h2>
-          <div class="container-departments">
-            <xsl:for-each select="departamentuak/departamentu">
-              <div class="department">
+          <h2>Ardurak</h2>
+          <div class="container-ardurak">
+            <xsl:for-each select="ardurak/ardura">
+              <div class="ardura">
                 <p>
-                  <strong>Departamentu ID:</strong>
-                  <xsl:value-of select="@id"/>
+                  <strong><xsl:value-of select="izena"/></strong>
                 </p>
-                <p>
-                  <strong>Departamentu Izena:</strong>
-                  <xsl:value-of select="izena"/>
-                </p>
-                <!-- <p><strong>Manager:</strong> <xsl:value-of select="manager/@id"/></p>-->
-                <p>
-                  <strong>Zentroa:</strong>
-                  <xsl:value-of select="manager/zentroa"/>
-                </p>
-                <div class="ikusidepbot">
-                  <a href="dpto_lang.php?id={@id}">
+                <div class="ikusiardbot">
+                  <a href="ardura_langile.php?id={@id}">
                     <button>Ikusi Langileak</button>
                   </a>
                 </div>

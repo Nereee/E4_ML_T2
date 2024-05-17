@@ -29,9 +29,6 @@
     </header>
 
 
-    <hr>
-
-
     <nav>
         <div class="nabegaziobarra">
             <ul>
@@ -42,9 +39,7 @@
             </ul>
         </div>
     </nav>
-
-
-    <hr>
+    
 <body>
     
     <section class="formularioaH">

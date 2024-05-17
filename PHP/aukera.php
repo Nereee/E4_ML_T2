@@ -47,6 +47,7 @@
             <form id="botoia" action="#" method="post">
                 <button class="botoia" type="button" onclick="departamentuak()">Departamentuak</button>
                 <button class="botoia" type="button" onclick="langileak()">Langileak</button>
+                <button class="botoia" type="button" onclick="ardurak()">Ardurak</button>
             </form>
     </section>
     
@@ -102,6 +103,10 @@
 
     function langileak() {
         window.location.href = "langileak.php"; 
+    }
+
+    function ardurak() {
+        window.location.href = "ardurak.php"; 
     }
 </script>
 </body>

@@ -3,15 +3,15 @@
 /* Departamentu bateko langileak erakusteko*/
 
    $arauak = new DOMDocument();
-   $arauak ->load("dpto_lang.xsl");
+   $arauak ->load("../XML/dpto_lang.xsl");
 
    $datuak = new DOMDocument();
-   $datuak->load("datuak.xml");
+   $datuak->load("../XML/datuak.xml");
 
    $proc = new XSLTProcessor();
    $proc->importStylesheet($arauak);
 
-   $proc ->setParameter("",'id_depto',$_GET['id_depto']);
+   $proc ->setParameter("",'id',$_GET['id']);
 
    echo $proc->transformToXML($datuak);
 
